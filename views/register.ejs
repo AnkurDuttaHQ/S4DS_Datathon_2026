@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Register — S4DS Datathon ’26</title>
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+<nav>
+    <div class="container nav-inner">
+        <a class="brand" href="/">
+            <span class="brand-mark">S4</span>
+            <span>S4DS <b>Datathon ’26</b></span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="rules.html">Rules</a>
+            <a href="index.html#format">Format</a>
+            <a href="index.html#timeline">Timeline</a>
+            <a href="index.html#fees">Fees</a>
+        </div>
+        <a class="nav-cta" href="/register">Register</a>
+    </div>
+</nav>
+<header class="page-hero">
+    <div class="container">
+        <div class="mono">REGISTRATION / STEP 01</div>
+        <h1 style="margin-top:18px">Build your team.<br>Enter the arena.</h1>
+        <p>One person submits the registration for the whole team. Member sections appear automatically based on team size.</p>
+    </div>
+</header>
+<main class="section">
+    <div class="container form-layout">
+        <form id="registrationForm" class="form-card">
+<div class="form-section">
+    <h3>01 / Team</h3>
+    <div class="grid2"><div>
+        <label>Team Name *</label>
+        <input name="team" required placeholder="e.g. Data Ninjas">
+    </div>
+    <div>
+        <label>Total Team Members *</label>
+        <select id="memberCount" name="memberCount">
+            <option value="1">1 member</option>
+            <option value="2">2 members</option>
+            <option value="3">3 members</option>
+            <option value="4">4 members</option>
+        </select>
+    </div>
+</div>
+</div>
+<div class="form-section">
+    <h3>02 / Team Leader / Primary Contact</h3>
+    <div class="grid2"><div>
+        <label>Full Name *</label>
+        <input required>
+    </div>
+    <div>
+        <label>WhatsApp Number *</label>
+        <input required>
+    </div>
+    <div>
+        <label>Email *</label>
+        <input type="email" required>
+    </div>
+    <div>
+        <label>College / University *</label>
+        <input required></div>
+        <div>
+            <label>Department *</label>
+            <input required></div>
+            <div>
+                <label>Academic Year *</label>
+                <select required>
+                    <option value="">Select</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                </select>
+            </div>
+        </div>
+    </div>
+<div class="form-section">
+    <h3>03 / Additional Members</h3>
+    <p class="form-note">Choose 2–4 members above to reveal the remaining member forms.</p>
+    <div id="additionalMembers"></div>
+</div>
+<div class="form-section">
+    <h3>04 / Membership & Payment</h3>
+    <p class="form-note">Production version will collect an S4DS membership YES/NO selection and proof for each member. If any member is not a society member or proof is missing/invalid, the total fee becomes ₹100 and payment verification is required.</p>
+</div>
+<button class="btn lime" type="submit">Submit Team Registration ↗</button>
+<div id="successBox" class="success">
+    <b>Registration submitted!</b>
+    <p style="color:var(--ink)">Demo registration ID:
+         <strong id="regId"></strong>
+         . Connect this form to your backend/database to store real submissions.</p>
+        </div>
+</form>
+<aside class="form-card sticky-card">
+    <div class="mono">REGISTRATION CHECKLIST</div>
+    <h3 style="margin-top:18px">Before you submit.</h3>
+    <ul class="checks"><li>Team has 1–4 members</li>
+        <li>All member details are complete</li>
+        <li>One person submits for everyone</li>
+        <li>Membership proof is ready where applicable</li>
+        <li>Payment proof will be required if fee = ₹100</li>
+    </ul>
+    <hr style="border-color:rgba(255,255,255,.12);margin:30px 0">
+    <p>
+        <b>Fee:</b>
+         ₹0 if all registered members are S4DS members. Otherwise ₹100 for the whole team.
+        </p>
+    </aside>
+</div>
+</main>
+<footer>
+    <div class="container footer-grid"><div>
+        <div class="brand">
+            <span class="brand-mark">S4</span>
+            <span>S4DS Datathon ’26</span>
+        </div>
+        <p>One team. One submission. One shot.</p>
+    </div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
