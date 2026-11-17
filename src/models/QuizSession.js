@@ -9,7 +9,7 @@ const sessionSchema = new mongoose.Schema({
   expiresAt: { type: Date, required: true },
 }, { timestamps: true });
 
-sessionSchema.index({ quizId: 1, registrationId: 1 }, { unique: true });
+sessionSchema.index(\n  { quizId: 1, registrationId: 1 },\n  { unique: true, partialFilterExpression: { status: "ACTIVE" } }\n);
 sessionSchema.index({ expiresAt: 1 }, { expireAfterSeconds: 0 });
 
 export default mongoose.model("QuizSession", sessionSchema);
