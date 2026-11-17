@@ -10,6 +10,7 @@ import adminrouter from "./routes/admin.routes.js";
 import paymentRoutes from "./routes/payment.routes.js";
 import checkInRoutes from "./routes/check-in.routes.js";
 import eventPassRoutes from "./routes/event-pass.routes.js";
+import quizAdminRoutes from "./routes/quiz-admin.routes.js";
 
 dotenv.config();
 
@@ -121,6 +122,8 @@ app.use(
 );
 
 app.use("/api/test-email", testEmailRoutes);
+
+// ==========================================\n// SECURE QUIZ ADMINISTRATION\n// ==========================================\napp.use("/api/admin/quiz", quizAdminRoutes);
 // ==========================================
 // START SERVER
 // ==========================================
